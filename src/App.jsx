@@ -54,6 +54,8 @@ function App() {
     return true;
   });
 
+  
+
   // return (
   //   <div className={darkMode ? "dark" : ""}>
   //     <div className="min-h-screen flex items-center justify-center bg-gray-100 dark:bg-gray-900 transition duration-500">
@@ -88,6 +90,8 @@ function App() {
   //     </div>
   //   </div>
   // );
+
+  
   return (
     <div
       className={`min-h-screen transition-all duration-500 ${darkMode
@@ -214,134 +218,3 @@ function App() {
 }
 
 export default App;
-
-
-
-
-
-
-
-// return (
-//   <div
-//     className={`min-h-screen transition-all duration-500 ${
-//       darkMode
-//         ? "bg-gradient-to-br from-slate-900 via-gray-900 to-black"
-//         : "bg-gradient-to-br from-blue-100 via-indigo-100 to-purple-100"
-//     }`}
-//   >
-//     <div className="flex justify-center items-center min-h-screen p-5">
-
-//       <div
-//         className="w-full max-w-2xl
-//         backdrop-blur-xl
-//         bg-white/70
-//         dark:bg-gray-800/70
-//         border border-white/20
-//         shadow-2xl
-//         rounded-3xl
-//         p-8"
-//       >
-
-//         {/* Header */}
-
-//         <div className="flex justify-between items-center mb-8">
-
-//           <div>
-
-//             <h1 className="text-4xl font-extrabold text-blue-600 dark:text-white">
-//               Smart To-Do
-//             </h1>
-
-//             <p className="text-gray-600 dark:text-gray-300 mt-1">
-//               Stay organized. Stay productive.
-//             </p>
-
-//           </div>
-
-//           <button
-//             onClick={() => setDarkMode(!darkMode)}
-//             className="h-12 w-12 rounded-full
-//             bg-blue-500
-//             hover:bg-blue-600
-//             text-white
-//             shadow-lg
-//             transition"
-//           >
-//             {darkMode ? "☀️" : "🌙"}
-//           </button>
-
-//         </div>
-
-//         {/* Statistics */}
-
-//         <div className="grid grid-cols-3 gap-4 mb-6">
-
-//           <div className="rounded-xl bg-blue-500 text-white p-4 text-center">
-
-//             <p className="text-sm">Total</p>
-
-//             <h2 className="text-2xl font-bold">
-//               {tasks.length}
-//             </h2>
-
-//           </div>
-
-//           <div className="rounded-xl bg-green-500 text-white p-4 text-center">
-
-//             <p className="text-sm">Completed</p>
-
-//             <h2 className="text-2xl font-bold">
-//               {tasks.filter(t => t.completed).length}
-//             </h2>
-
-//           </div>
-
-//           <div className="rounded-xl bg-orange-500 text-white p-4 text-center">
-
-//             <p className="text-sm">Pending</p>
-
-//             <h2 className="text-2xl font-bold">
-//               {tasks.filter(t => !t.completed).length}
-//             </h2>
-
-//           </div>
-
-//         </div>
-
-//         {/* Components */}
-
-//         <TaskInput addTask={addTask} />
-
-//         <div className="mt-5">
-//           <Filter
-//             filter={filter}
-//             setFilter={setFilter}
-//           />
-//         </div>
-
-//         <div className="mt-6">
-//           <TaskList
-//             tasks={filteredTasks}
-//             deleteTask={deleteTask}
-//             toggleComplete={toggleComplete}
-//             editTask={editTask}
-//           />
-//         </div>
-
-//         <div className="mt-8 border-t pt-4 flex justify-between text-gray-500 dark:text-gray-300">
-
-//           <span>
-//             Showing {filteredTasks.length} task(s)
-//           </span>
-
-//           <span>
-//             {new Date().toLocaleDateString()}
-//           </span>
-
-//         </div>
-
-//       </div>
-
-//     </div>
-//   </div>
-// );
